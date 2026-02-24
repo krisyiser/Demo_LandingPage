@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zima Technologies | Innovating the Future of Digital Experiences</title>
+  <meta name="description"
+    content="Zima Technologies provides cutting-edge digital solutions, from AI to cloud infrastructure and experience design. Redefining human-digital interaction.">
+  <!-- Meta tags for SEO -->
+  <meta property="og:title" content="Zima Technologies | Future of Innovation">
+  <meta property="og:description" content="Explore next-gen digital solutions for bold visionaries.">
+  <meta property="og:type" content="website">
+</head>
+
+<body>
+  <!-- Custom Cursor -->
+  <div id="custom-cursor"></div>
+  <div id="cursor-blur"></div>
+
+  <!-- Loader -->
+  <div id="loader">
+    <div class="loader-content">
+      <div class="loader-logo">ZIMA</div>
+      <div class="loader-line"></div>
+    </div>
+  </div>
+
+  <canvas id="flow-canvas"></canvas>
+
+  <nav id="navbar">
+    <div class="container">
+      <a href="#" class="logo">ZIMA</a>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn btn-primary magnetic">Get Started</a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div id="hero-bg-canvas"></div>
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="title-reveal">Next-Gen <span class="gradient-text">Digital Solutions</span> for Bold Visionaries
+          </h1>
+          <p class="title-reveal">We push the boundaries of technology to create immersive experiences that redefine how
+            humans interact with the digital world.</p>
+          <div class="hero-btns title-reveal">
+            <a href="#portfolio" class="btn btn-primary magnetic">View Our Work</a>
+            <a href="#process" class="btn btn-outline magnetic">Our Mission</a>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="mouse"></div>
+        <p>Scroll to explore</p>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section-padding">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="title-reveal">Our <span class="gradient-text">Expertise</span></h2>
+          <p class="title-reveal">Mastering the tools of tomorrow to build your vision today.</p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card glass title-reveal">
+            <div class="service-icon"><i class="icon-ai"></i>A</div>
+            <h3>Artificial Intelligence</h3>
+            <p>Harnessing the power of neural networks to solve complex problems.</p>
+            <div class="service-overlay">
+              <div>
+                <p>Custom machine learning models tailored to your business needs, optimizing processes and increasing
+                  efficiency.</p>
+                <a href="#" class="btn btn-outline">Explore AI</a>
+              </div>
+            </div>
+          </div>
+          <div class="service-card glass title-reveal">
+            <div class="service-icon"><i class="icon-cloud"></i>D</div>
+            <h3>Cloud Infrastructure</h3>
+            <p>Scalable, secure, and lightning-fast cloud ecosystems.</p>
+            <div class="service-overlay">
+              <div>
+                <p>We build resilient architectures that grow with you, ensuring 99.9% uptime and global accessibility.
+                </p>
+                <a href="#" class="btn btn-outline">View Cloud</a>
+              </div>
+            </div>
+          </div>
+          <div class="service-card glass title-reveal">
+            <div class="service-icon"><i class="icon-design"></i>U</div>
+            <h3>Experience Design</h3>
+            <p>Interfaces that feel like an extension of the mind.</p>
+            <div class="service-overlay">
+              <div>
+                <p>Blending aesthetics with functionality to create user journeys that are both intuitive and
+                  breathtaking.</p>
+                <a href="#" class="btn btn-outline">See Design</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section (New) -->
+    <section id="process" class="section-padding glass" style="margin: 4rem 2rem; border-radius: 40px;">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="title-reveal">The <span class="gradient-text">Zima Process</span></h2>
+          <p class="title-reveal">A methodical approach to radical innovation.</p>
+        </div>
+        <div class="process-steps">
+          <div class="step title-reveal">
+            <div class="step-num">01</div>
+            <h3>Discovery</h3>
+            <p>We deep dive into your vision and challenges to uncover unique opportunities.</p>
+          </div>
+          <div class="step title-reveal">
+            <div class="step-num">02</div>
+            <h3>Architecture</h3>
+            <p>Designing a robust technological blueprint that scales with your ambition.</p>
+          </div>
+          <div class="step title-reveal">
+            <div class="step-num">03</div>
+            <h3>Execution</h3>
+            <p>Our elite engineers bring the vision to life with precision and speed.</p>
+          </div>
+          <div class="step title-reveal">
+            <div class="step-num">04</div>
+            <h3>Optimization</h3>
+            <p>Continuous refinement to ensure peak performance and user delight.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="parallax-section"
+      style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1920');">
+      <div class="parallax-content container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <h2 class="gradient-text count" data-target="500">0</h2>
+            <p>Projects Delivered</p>
+          </div>
+          <div class="stat-item">
+            <h2 class="gradient-text count" data-target="50">0</h2>
+            <p>Users Impacted (M+)</p>
+          </div>
+          <div class="stat-item">
+            <h2 class="gradient-text count" data-target="25">0</h2>
+            <p>Global Awards</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Carousel -->
+    <section id="portfolio" class="section-padding">
+      <div class="container">
+        <h2 class="title-reveal">Featured <span class="gradient-text">Infiltrations</span></h2>
+        <div class="carousel-container">
+          <div class="carousel-track" id="carousel-track">
+            <!-- Slide 1 -->
+            <div class="carousel-slide">
+              <div class="slide-content">
+                <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1920"
+                  alt="Cybersecurity project">
+                <div class="slide-info">
+                  <h3>Project Nexus</h3>
+                  <p>Advanced security mesh for decentralized networks.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-slide">
+              <div class="slide-content">
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1920"
+                  alt="Electronic hardware">
+                <div class="slide-info">
+                  <h3>Aura Interface</h3>
+                  <p>Biometric authentication for public infrastructure.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-slide">
+              <div class="slide-content">
+                <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=1920"
+                  alt="Robotics">
+                <div class="slide-info">
+                  <h3>Synthetix AI</h3>
+                  <p>Natural language processing for legal automation.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-controls">
+          <button id="prev-slide" class="carousel-btn">
+            << /button>
+              <div class="carousel-nav" id="carousel-dots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+              </div>
+              <button id="next-slide" class="carousel-btn">></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="section-padding">
+      <div class="container">
+        <h2 class="title-reveal">The <span class="gradient-text">Architects</span></h2>
+        <div class="team-grid">
+          <div class="team-card title-reveal">
+            <div class="team-img-wrapper">
+              <img src="https://i.pravatar.cc/300?u=12" class="team-img" alt="CEO">
+            </div>
+            <h3>Alex Rivera</h3>
+            <p class="gradient-text">Chief Architect</p>
+            <div class="team-social">
+              <span>LI</span><span>TW</span>
+            </div>
+          </div>
+          <div class="team-card title-reveal">
+            <div class="team-img-wrapper">
+              <img src="https://i.pravatar.cc/300?u=22" class="team-img" alt="CTO">
+            </div>
+            <h3>Sarah Chen</h3>
+            <p class="gradient-text">Head of AI</p>
+            <div class="team-social">
+              <span>LI</span><span>TW</span>
+            </div>
+          </div>
+          <div class="team-card title-reveal">
+            <div class="team-img-wrapper">
+              <img src="https://i.pravatar.cc/300?u=32" class="team-img" alt="Lead Designer">
+            </div>
+            <h3>Marcus Thorne</h3>
+            <p class="gradient-text">UX Strategist</p>
+            <div class="team-social">
+              <span>LI</span><span>TW</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section (New) -->
+    <section id="faq" class="section-padding">
+      <div class="container">
+        <h2 class="title-reveal">Frequently Asked <span class="gradient-text">Questions</span></h2>
+        <div class="faq-accordion">
+          <div class="faq-item title-reveal">
+            <div class="faq-question">What technologies do you specialize in? <span class="faq-icon">+</span></div>
+            <div class="faq-answer">We specialize in React, Next.js, OpenAI, TensorFlow, AWS, and modern interface
+              design patterns.</div>
+          </div>
+          <div class="faq-item title-reveal">
+            <div class="faq-question">Do you offer ongoing support? <span class="faq-icon">+</span></div>
+            <div class="faq-answer">Yes, we provide 24/7 maintenance and iterative improvement packages for all our
+              enterprise clients.</div>
+          </div>
+          <div class="faq-item title-reveal">
+            <div class="faq-question">How long does a typical project take? <span class="faq-icon">+</span></div>
+            <div class="faq-answer">Projects typically range from 4 to 12 weeks depending on the complexity and scope.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding glass" style="margin: 0 2rem 4rem; border-radius: 40px;">
+      <div class="container">
+        <div class="contact-wrapper">
+          <div>
+            <h2 class="title-reveal" style="font-size: 3rem;">Ready to <span class="gradient-text">Infiltrate</span> the
+              Future?</h2>
+            <p style="margin-top: 2rem; color: var(--text-muted);">Drop us a line and let's discuss how we can bring
+              your wildest digital dreams to life. Our team is standing by.</p>
+            <div class="contact-info">
+              <p>Email: contact@zima.tech</p>
+              <p>Location: Silicon Valley / Remote</p>
+            </div>
+          </div>
+          <form id="contact-form" class="title-reveal">
+            <div class="form-group">
+              <label>Name</label>
+              <input type="text" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" placeholder="john@example.com" required>
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <textarea rows="5" placeholder="Tell us about your project..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary magnetic" style="width: 100%;">Send Transmission</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="logo footer-logo">ZIMA</div>
+        <ul class="footer-links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="social-icons">
+          <span>IN</span><span>GH</span><span>X</span>
+        </div>
+      </div>
+      <p class="copyright">&copy; 2026 Zima Technologies. All rights reserved.</p>
+      <div class="zima-tag">Landing Page demo de Zima Technologies</div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
