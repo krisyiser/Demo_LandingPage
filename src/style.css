@@ -55,7 +55,8 @@ canvas {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: -10;
+  /* Move to very back */
   pointer-events: none;
 }
 
@@ -216,6 +217,7 @@ nav {
   padding: 2rem 0;
   z-index: 1000;
   transition: var(--transition);
+  background: transparent;
 }
 
 nav.scrolled {
@@ -256,16 +258,19 @@ nav .container {
 
 /* --- Hero --- */
 .hero {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   position: relative;
-  padding-top: 5rem;
+  padding-top: 100px;
+  /* Offset for fixed header */
+  overflow: hidden;
 }
 
 .hero-content {
   max-width: 900px;
   z-index: 2;
+  position: relative;
 }
 
 .hero h1 {
