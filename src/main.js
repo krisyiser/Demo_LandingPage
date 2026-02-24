@@ -210,7 +210,7 @@ form?.addEventListener('submit', (e) => {
   const btn = form.querySelector('button');
   const originalText = btn.innerHTML;
 
-  btn.innerHTML = 'Transmission Sent...';
+  btn.innerHTML = 'Transmisión Enviada...';
   btn.style.background = '#10b981';
 
   setTimeout(() => {
