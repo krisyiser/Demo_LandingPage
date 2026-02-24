@@ -151,6 +151,15 @@ document.querySelectorAll('.faq-item').forEach(item => {
   });
 });
 
+// --- CV Toggle Logic ---
+document.querySelectorAll('.cv-toggle').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const card = btn.closest('.team-member-card');
+    card.classList.toggle('active');
+    btn.innerText = card.classList.contains('active') ? 'Ocultar CV' : 'Ver CV';
+  });
+});
+
 // --- Background Flow Animation ---
 const canvas = document.getElementById('flow-canvas');
 const ctx = canvas.getContext('2d');

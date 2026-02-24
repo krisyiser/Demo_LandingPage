@@ -172,93 +172,155 @@
       </div>
     </section>
 
-    <!-- Portfolio Carousel -->
+    <!-- Proyectos Destacados Section -->
     <section id="portfolio" class="section-padding">
       <div class="container">
-        <h2 class="title-reveal"><span class="gradient-text">Infiltraciones</span> Destacadas</h2>
-        <div class="carousel-container">
-          <div class="carousel-track" id="carousel-track">
-            <!-- Slide 1 -->
-            <div class="carousel-slide">
-              <div class="slide-content">
-                <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1920"
-                  alt="Proyecto de ciberseguridad">
-                <div class="slide-info">
-                  <h3>Proyecto Nexus</h3>
-                  <p>Malla de seguridad avanzada para redes descentralizadas.</p>
+        <h2 class="title-reveal">Proyectos <span class="gradient-text">Destacados</span></h2>
+        <div class="portfolio-carousel-wrapper">
+          <div class="carousel-container">
+            <div class="carousel-track" id="carousel-track">
+              <!-- Proyecto 1 -->
+              <div class="carousel-slide">
+                <div class="project-card title-reveal pop-up">
+                  <div class="project-img">
+                    <img
+                      src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1920"
+                      alt="Nexus">
+                  </div>
+                  <div class="project-content">
+                    <h3>Proyecto Nexus</h3>
+                    <p>Malla de seguridad avanzada para redes descentralizadas de grado gubernamental.</p>
+                    <a href="#" class="btn btn-outline btn-small">Ver Detalles</a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <!-- Slide 2 -->
-            <div class="carousel-slide">
-              <div class="slide-content">
-                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1920"
-                  alt="Hardware electrónico">
-                <div class="slide-info">
-                  <h3>Interfaz Aura</h3>
-                  <p>Autenticación biométrica para infraestructura pública.</p>
+              <!-- Proyecto 2 -->
+              <div class="carousel-slide">
+                <div class="project-card title-reveal pop-up">
+                  <div class="project-img">
+                    <img
+                      src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1920"
+                      alt="Aura">
+                  </div>
+                  <div class="project-content">
+                    <h3>Interfaz Aura</h3>
+                    <p>Sistema de reconocimiento biométrico por iris para control de fronteras digitales.</p>
+                    <a href="#" class="btn btn-outline btn-small">Ver Detalles</a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <!-- Slide 3 -->
-            <div class="carousel-slide">
-              <div class="slide-content">
-                <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=1920"
-                  alt="Robótica">
-                <div class="slide-info">
-                  <h3>Synthetix AI</h3>
-                  <p>Procesamiento de lenguaje natural para automatización legal.</p>
+              <!-- Proyecto 3 -->
+              <div class="carousel-slide">
+                <div class="project-card title-reveal pop-up">
+                  <div class="project-img">
+                    <img
+                      src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=1920"
+                      alt="Synthetix">
+                  </div>
+                  <div class="project-content">
+                    <h3>Synthetix AI</h3>
+                    <p>Motor de procesamiento de lenguaje natural especializado en derecho internacional.</p>
+                    <a href="#" class="btn btn-outline btn-small">Ver Detalles</a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="carousel-controls">
-          <button id="prev-slide" class="carousel-btn">
-            &lt; </button>
-          <div class="carousel-nav" id="carousel-dots">
-            <span class="dot active" data-index="0"></span>
-            <span class="dot" data-index="1"></span>
-            <span class="dot" data-index="2"></span>
+          <div class="carousel-controls">
+            <button id="prev-slide" class="carousel-btn">&lt;</button>
+            <div class="carousel-nav" id="carousel-dots">
+              <span class="dot active" data-index="0"></span>
+              <span class="dot" data-index="1"></span>
+              <span class="dot" data-index="2"></span>
+            </div>
+            <button id="next-slide" class="carousel-btn">&gt;</button>
           </div>
-          <button id="next-slide" class="carousel-btn"> &gt; </button>
         </div>
       </div>
     </section>
 
-    <!-- Team Section -->
-    <section id="team" class="section-padding">
+    <!-- Equipo de Creación Section -->
+    <section id="team" class="section-padding glass" style="margin: 4rem 2rem; border-radius: 40px;">
       <div class="container">
-        <h2 class="title-reveal">Los <span class="gradient-text">Arquitectos</span></h2>
-        <div class="team-grid">
-          <div class="team-card title-reveal">
-            <div class="team-img-wrapper">
-              <img src="https://i.pravatar.cc/300?u=12" class="team-img" alt="CEO">
+        <div class="section-header">
+          <h2 class="title-reveal">Equipo de <span class="gradient-text">Creación</span></h2>
+          <p class="title-reveal">Los cerebros detrás del código y el diseño innovador.</p>
+        </div>
+        <div class="team-grid-5">
+          <!-- Miembro 1 -->
+          <div class="team-member-card title-reveal" data-id="1">
+            <div class="member-img">
+              <img src="https://i.pravatar.cc/300?u=man1" alt="Carlos Méndez">
             </div>
-            <h3>Alex Rivera</h3>
-            <p class="gradient-text">Arquitecto Jefe</p>
-            <div class="team-social">
-              <span>LI</span><span>TW</span>
+            <div class="member-info">
+              <h3>Carlos Méndez</h3>
+              <p class="role">Arquitecto Jefe</p>
+            </div>
+            <div class="cv-toggle">Ver CV</div>
+            <div class="cv-content" id="cv-1">
+              <h4>Perfil Profesional</h4>
+              <p>Experto en sistemas distribuidos y criptografía con más de 12 años liderando proyectos de
+                infraestructura crítica.</p>
             </div>
           </div>
-          <div class="team-card title-reveal">
-            <div class="team-img-wrapper">
-              <img src="https://i.pravatar.cc/300?u=22" class="team-img" alt="CTO">
+          <!-- Miembro 2 -->
+          <div class="team-member-card title-reveal" data-id="2">
+            <div class="member-img">
+              <img src="https://i.pravatar.cc/300?u=man2" alt="Daniel Soto">
             </div>
-            <h3>Sarah Chen</h3>
-            <p class="gradient-text">Directora de IA</p>
-            <div class="team-social">
-              <span>LI</span><span>TW</span>
+            <div class="member-info">
+              <h3>Daniel Soto</h3>
+              <p class="role">Director de IA</p>
+            </div>
+            <div class="cv-toggle">Ver CV</div>
+            <div class="cv-content" id="cv-2">
+              <h4>Perfil Profesional</h4>
+              <p>Ph.D. en Computación Neuronal. Especialista en optimización de modelos Transformer aplicada.</p>
             </div>
           </div>
-          <div class="team-card title-reveal">
-            <div class="team-img-wrapper">
-              <img src="https://i.pravatar.cc/300?u=32" class="team-img" alt="Lead Designer">
+          <!-- Miembro 3 -->
+          <div class="team-member-card title-reveal" data-id="3">
+            <div class="member-img">
+              <img src="https://i.pravatar.cc/300?u=man3" alt="Javier Luna">
             </div>
-            <h3>Marcus Thorne</h3>
-            <p class="gradient-text">Estratega UX</p>
-            <div class="team-social">
-              <span>LI</span><span>TW</span>
+            <div class="member-info">
+              <h3>Javier Luna</h3>
+              <p class="role">Estratega UX</p>
+            </div>
+            <div class="cv-toggle">Ver CV</div>
+            <div class="cv-content" id="cv-3">
+              <h4>Perfil Profesional</h4>
+              <p>Diseñador de interfaces para el futuro con enfoque en ergonomía digital e interacciones.</p>
+            </div>
+          </div>
+          <!-- Miembro 4 -->
+          <div class="team-member-card title-reveal" data-id="4">
+            <div class="member-img">
+              <img src="https://i.pravatar.cc/300?u=man4" alt="Adrián Torres">
+            </div>
+            <div class="member-info">
+              <h3>Adrián Torres</h3>
+              <p class="role">Ingeniero Principal</p>
+            </div>
+            <div class="cv-toggle">Ver CV</div>
+            <div class="cv-content" id="cv-4">
+              <h4>Perfil Profesional</h4>
+              <p>Desarrollador Full-stack especializado en Rust y Go. Arquitecto de microservicios escalables.</p>
+            </div>
+          </div>
+          <!-- Miembro 5 -->
+          <div class="team-member-card title-reveal" data-id="5">
+            <div class="member-img">
+              <img src="https://i.pravatar.cc/300?u=man5" alt="Marcos Rivas">
+            </div>
+            <div class="member-info">
+              <h3>Marcos Rivas</h3>
+              <p class="role">Maestro de Producto</p>
+            </div>
+            <div class="cv-toggle">Ver CV</div>
+            <div class="cv-content" id="cv-5">
+              <h4>Perfil Profesional</h4>
+              <p>Estratega de producto con visión de mercado global para soluciones comerciales.</p>
             </div>
           </div>
         </div>
