@@ -26,8 +26,10 @@ document.addEventListener('mousemove', (e) => {
 document.addEventListener('mousedown', () => cursor.style.scale = '0.8');
 document.addEventListener('mouseup', () => cursor.style.scale = '1');
 
-// --- Magnetic Elements ---
+// --- Magnetic Elements & Form Card Spotlight ---
 const magneticElements = document.querySelectorAll('.magnetic');
+const formCard = document.querySelector('.form-card');
+
 magneticElements.forEach(el => {
   el.addEventListener('mousemove', (e) => {
     const rect = el.getBoundingClientRect();
@@ -46,6 +48,16 @@ magneticElements.forEach(el => {
     cursor.style.border = 'none';
   });
 });
+
+if (formCard) {
+  formCard.addEventListener('mousemove', (e) => {
+    const rect = formCard.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    formCard.style.setProperty('--mouse-x', `${x}px`);
+    formCard.style.setProperty('--mouse-y', `${y}px`);
+  });
+}
 
 // --- Navbar Scroll Effect ---
 const navbar = document.getElementById('navbar');
