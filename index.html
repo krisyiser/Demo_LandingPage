@@ -31,9 +31,9 @@
   <canvas id="flow-canvas"></canvas>
 
   <nav id="navbar">
-    <div class="container">
+    <div class="container navbar-container">
       <a href="#" class="logo">ZIMA</a>
-      <ul class="nav-links">
+      <ul class="nav-links desktop-links">
         <li><a href="#services">Servicios</a></li>
         <li><a href="#process">Proceso</a></li>
         <li><a href="#portfolio">Portafolio</a></li>
@@ -41,7 +41,24 @@
         <li><a href="#faq">FAQ</a></li>
         <li><a href="#contact">Contacto</a></li>
       </ul>
-      <a href="#contact" class="btn btn-primary magnetic">Comenzar</a>
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary magnetic hide-mobile">Comenzar</a>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Toggle Menu">
+          <span class="bar bar-1"></span>
+          <span class="bar bar-2"></span>
+          <span class="bar bar-3"></span>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="mobile-menu">
+      <ul class="mobile-nav-links">
+        <li><a href="#services">Servicios</a></li>
+        <li><a href="#process">Proceso</a></li>
+        <li><a href="#portfolio">Portafolio</a></li>
+        <li><a href="#team">Equipo</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
     </div>
   </nav>
 
